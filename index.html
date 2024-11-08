@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <!-- CDN -->
+    <!-- CSS untuk tema highlight.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Javascript <abbr title="Document Object Model" class="DOM_">DOM</abbr>
+      </h1>
+      <p>
+        Dengan HTML DOM, JavaScript dapat mengakses dan mengubah semua elemen
+        dokumen HTML.
+      </p>
+    </header>
+    <main>
+      <section class="pengenalanDom">
+        <h2>Apa itu DOM?</h2>
+        <p>
+          HTML DOM adalah model objek dan antarmuka pemrograman standar untuk
+          HTML. Model ini mendefinisikan:
+        </p>
+
+        <ul>
+          <li>Elemen HTML sebagai objek</li>
+          <li>Properti semua elemen HTML</li>
+          <li>Metode untuk mengakses semua elemen HTML</li>
+          <li>Peristiwa untuk semua elemen HTML</li>
+        </ul>
+      </section>
+
+      <section class="domMethod">
+        <h2>JavaScript - HTML DOM Methods</h2>
+        <p>
+          Metode DOM HTML adalah tindakan yang dapat kalian lakukan (pada Elemen
+          HTML). Properti HTML DOM adalah value (Elemen HTML) yang dapat lu atur
+          atau ubah.
+        </p>
+
+        <h2>Interface Pemrograman DOM</h2>
+        <p>
+          DOM HTML dapat diakses dengan JavaScript (dan dengan bahasa
+          pemrograman lainnya). Dalam DOM, semua elemen HTML didefinisikan
+          sebagai objek . Antarmuka pemrograman adalah properti dan metode
+          setiap objek. Properti adalah value yang dapat lu peroleh atau atur
+          (seperti mengubah konten elemen HTML). Method adalah tindakan yang
+          dapat lu pada lakukan ( seperti menambah atau menghapus elemen HTML).
+        </p>
+        <pre>
+<code class="language-js">
+  document.getElementById("demo").innerHTML = "Hello World!";
+</code>
+        </pre>
+        <p>
+          di contoh pada kode di atas si getElementById adalah method dan si
+          innerHtl itu si Properti
+        </p>
+      </section>
+
+      <section class="domElement">
+        <h2>JavaScript HTML DOM Elements</h2>
+        <h3>menemukan dan mencari elemen HTML</h3>
+        <p>
+          sering bgt kita mau manipulasi elemen html, buat ngelakuin itu kamu
+          harus menemukan elemen html itu, ada beberpa cara melakukannya:
+        </p>
+        <ul>
+          <li>menemukan element Html dengan Id</li>
+          <li>menemukan element Html dengan Tag Nmae</li>
+          <li>menemukan element Html dengan Class name</li>
+          <li>menemukan element Html dengan css selector</li>
+          <li>menemukan element Html dengan HTML object collections</li>
+        </ul>
+      </section>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
